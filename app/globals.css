@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Sophisticated dark charcoal palette — never pure black */
+  --background: #141414;
+  --foreground: #EDEDED;
+  --card: #1C1C1C;
+  --card-foreground: #EDEDED;
+  --popover: #222222;
+  --popover-foreground: #EDEDED;
+
+  /* Primary: a calm teal-cyan glow — readable and premium */
+  --primary: #4ECDC4;
+  --primary-foreground: #0D1B1A;
+
+  --secondary: #252525;
+  --secondary-foreground: #BEBEBE;
+  --muted: #1F1F1F;
+  --muted-foreground: #737373;
+  --accent: #2A2A2A;
+  --accent-foreground: #EDEDED;
+
+  --destructive: #E05252;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #2A2A2A;
+  --input: #252525;
+  --ring: #4ECDC4;
+  --radius: 0.875rem;
+
+  /* Sidebar tokens */
+  --sidebar: #191919;
+  --sidebar-foreground: #EDEDED;
+  --sidebar-primary: #4ECDC4;
+  --sidebar-primary-foreground: #0D1B1A;
+  --sidebar-accent: #252525;
+  --sidebar-accent-foreground: #EDEDED;
+  --sidebar-border: #242424;
+  --sidebar-ring: #4ECDC4;
+
+  /* Extra glow token for avatar/accent elements */
+  --glow: #4ECDC420;
+}
+
+@theme inline {
+  --font-sans: 'Vazirmatn', 'Tahoma', 'Arial', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  direction: rtl;
+}
+
+/* ── Message entrance animation ── */
+@keyframes messageIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.message-appear {
+  animation: messageIn 0.22s ease-out forwards;
+}
+
+/* ── Typing dots ── */
+@keyframes bounce-dot {
+  0%, 80%, 100% { transform: scale(0.55); opacity: 0.35; }
+  40%           { transform: scale(1);    opacity: 1; }
+}
+.typing-dot:nth-child(1) { animation: bounce-dot 1.3s ease-in-out infinite 0s; }
+.typing-dot:nth-child(2) { animation: bounce-dot 1.3s ease-in-out infinite 0.18s; }
+.typing-dot:nth-child(3) { animation: bounce-dot 1.3s ease-in-out infinite 0.36s; }
+
+/* ── Scroll-to-bottom button ── */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.scroll-btn-appear {
+  animation: fadeSlideUp 0.18s ease-out;
+}
+
+/* ── Subtle noise texture on background ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
