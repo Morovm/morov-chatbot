@@ -7,8 +7,13 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+import math
+import re
+import unicodedata
+import httpx
 import chromadb
 import ollama
+
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
@@ -19,8 +24,8 @@ DATA_FILE = BASE_DIR / "company_data.txt"
 CHROMA_DIR = BASE_DIR / "chroma_db"
 COLLECTION_NAME = "morov_company_knowledge"
 OLLAMA_BASE_URL = "http://localhost:11434"
-LLM_MODEL = "mistral:7b-instruct"
-EMBEDDING_MODEL = "nomic-embed-text"
+LLM_MODEL = "morov-mistral"
+EMBEDDING_MODEL = "morov-embed"
 
 app = FastAPI(title="Morov Chatbot API", version="0.1.0")
 app.add_middleware(
@@ -56,7 +61,7 @@ def split_sentences(text: str) -> list[str]:
     return sentences
 
 
-def build_chunks(text: str, target_size: int = 700, overlap: int = 100) -> list[str]:
+def build_chunks(text: str, target_size: int = 250, overlap: int = 100) -> list[str]:
     sentences = split_sentences(text)
     if not sentences:
         return []
@@ -80,12 +85,51 @@ def build_chunks(text: str, target_size: int = 700, overlap: int = 100) -> list[
 
     return [chunk.strip() for chunk in chunks if chunk.strip()]
 
+def clean_chunk_advanced(text: str) -> str:
+    text = re.sub(r'[\u200b\u200c\u200d\u200e\u200f\ufeff]', '', text)
+    text = re.sub(r'[^\w\s]{4,}', ' ', text)
+    text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', text)
+    text = text.replace('\x00', '')
+    text = unicodedata.normalize('NFC', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    
+    if len(text) > 200:
+        text = text[:200]
+    return text
 
 def embed_texts(texts: list[str]) -> list[list[float]]:
+    print(f"DEBUG: EMBEDDING_MODEL = {EMBEDDING_MODEL}")
     embeddings: list[list[float]] = []
-    for text in texts:
-        embedding = ollama.embeddings(model=EMBEDDING_MODEL, prompt=text)["embedding"]
-        embeddings.append(embedding)
+    
+    for i, text in enumerate(texts):
+        # تمیزکاری
+        cleaned = clean_chunk_advanced(text)
+        if not cleaned or len(cleaned) < 10:
+            print(f"[SKIP] chunk {i} too short")
+            continue
+        
+        # درخواست مستقیم به API Ollama
+        try:
+            with httpx.Client(timeout=30) as client:
+                resp = client.post(
+                    "http://localhost:11434/api/embeddings",
+                    json={"model": EMBEDDING_MODEL, "prompt": cleaned}
+                )
+                if resp.status_code != 200:
+                    print(f"[ERROR] chunk {i}: HTTP {resp.status_code}: {resp.text[:200]}")
+                    continue
+                
+                data = resp.json()
+                emb = data.get("embedding")
+                if not emb or any(math.isnan(x) or math.isinf(x) for x in emb):
+                    print(f"[NaN/Inf] chunk {i}")
+                    continue
+                embeddings.append(emb)
+        except Exception as e:
+            print(f"[ERROR] chunk {i}: {e}")
+            continue
+
+    print(f"Successfully embedded {len(embeddings)} / {len(texts)} chunks.")
     return embeddings
 
 
@@ -96,27 +140,41 @@ def ingest_text(content: str, source_name: str) -> int:
 
     collection.delete(where={"source": source_name})
     embeddings = embed_texts(chunks)
-    ids = [f"{source_name}-{idx}-{uuid.uuid4().hex[:8]}" for idx in range(len(chunks))]
-    metadatas = [{"source": source_name, "chunk_index": idx} for idx in range(len(chunks))]
-    collection.add(ids=ids, documents=chunks, embeddings=embeddings, metadatas=metadatas)
+
+    if not embeddings:
+        print("No valid embeddings generated. Skipping ingest into collection.")
+        return 0
+
+    
+    num_valid = len(embeddings)
+    ids = [f"{source_name}-{idx}-{uuid.uuid4().hex[:8]}" for idx in range(num_valid)]
+    metadatas = [{"source": source_name, "chunk_index": idx} for idx in range(num_valid)]
+    documents = [chunks[idx] for idx in range(num_valid)]  
+    
+    collection.add(ids=ids, documents=documents, embeddings=embeddings, metadatas=metadatas)
     return len(chunks)
 
 
 def build_prompt(question: str, contexts: list[str]) -> str:
-    context_block = "\n\n---\n\n".join(contexts) if contexts else "هیچ زمینه ای یافت نشد."
-    return f"""
-تو دستیار سازمانی «مروو چت بات» هستی.
-فقط بر اساس زمینه ارائه شده پاسخ بده.
-اگر پاسخ در زمینه موجود نیست، خیلی مودبانه بگو که اطلاعات کافی در اسناد شرکت وجود ندارد.
-از حدس زدن، ارائه اطلاعات خارج از متن و پاسخ عمومی بدون استناد به زمینه خودداری کن.
-پاسخ را کاملا فارسی، روشن و خلاصه بنویس.
+    if not contexts or all(c.strip() == "" for c in contexts):
+        return "NO_CONTEXT"
+    
+    context_block = "\n\n---\n\n".join(contexts)
+    return f"""<s>[INST] <<SYS>>
+You are a precise, helpful AI assistant named Morov Chatbot. You answer questions based ONLY on the provided context.
+Rules:
+- Only use information from the context to answer.
+- If the answer is not in the context, say: "I don't have that information in my knowledge base."
+- Do NOT guess or make up information.
+- Keep answers concise and to the point.
+<</SYS>>
 
-زمینه:
+Context:
 {context_block}
 
-سوال کاربر:
-{question}
-""".strip()
+Question: {question}
+
+Answer: [/INST]"""
 
 
 def format_sse(data: dict[str, Any]) -> str:
@@ -144,7 +202,7 @@ async def ingest(file: UploadFile | None = File(default=None)) -> dict[str, Any]
         source_name = file.filename or "uploaded_document.txt"
     else:
         if not DATA_FILE.exists():
-            raise HTTPException(status_code=404, detail="فایل company_data.txt پیدا نشد.")
+            raise HTTPException(status_code=400, detail="No processable text found in the document.")
         text = DATA_FILE.read_text(encoding="utf-8")
         source_name = DATA_FILE.name
 
@@ -158,7 +216,15 @@ async def chat(payload: ChatRequest) -> StreamingResponse:
     if not user_message:
         raise HTTPException(status_code=400, detail="پیام کاربر خالی است.")
 
-    query_embedding = ollama.embeddings(model=EMBEDDING_MODEL, prompt=user_message)["embedding"]
+    with httpx.Client(timeout=10) as client:
+        q_resp = client.post(
+            "http://localhost:11434/api/embeddings",
+            json={"model": EMBEDDING_MODEL, "prompt": user_message}
+        )
+        if q_resp.status_code == 200:
+            query_embedding = q_resp.json()["embedding"]
+        else:
+            raise HTTPException(status_code=500, detail="Embedding service error")
     result = collection.query(query_embeddings=[query_embedding], n_results=4)
     contexts = (result.get("documents") or [[]])[0]
     prompt = build_prompt(user_message, contexts)
@@ -171,6 +237,14 @@ async def chat(payload: ChatRequest) -> StreamingResponse:
             model=LLM_MODEL,
             messages=messages,
             stream=True,
+            options={
+                "temperature": 0.3,
+                "top_p": 0.9,
+                "top_k": 40,
+                "max_tokens": 512,
+                "repeat_penalty": 1.1,
+                "stop": ["<s>", "[/INST]", "[INST]"],
+            }
         )
         for chunk in stream:
             token = chunk.get("message", {}).get("content", "")

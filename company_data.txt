@@ -1,283 +1,211 @@
-شرکت: راهکارپردازان مروو
-نسخه سند: 1.0
-تاریخ به‌روزرسانی: 1405/02/21
-نوع سند: پروفایل سازمانی و راهنمای خدمات
+Company: TechVision Solutions
+Document Version: 1.0
+Last Updated: 2025-05-12
+Type: Organizational Profile & Service Guide
 
 ========================================
-بخش 1: معرفی شرکت
+SECTION 1: Company Introduction
 ========================================
 
-نام شرکت: شرکت راهکارپردازان مروو
-نام انگلیسی: Morov Pardazan Co.
-سال تاسیس: 1394
-شناسه ملی (فرضی): 14004567891
-حوزه فعالیت: راهکارهای نرم افزاری سازمانی، هوش مصنوعی، تحلیل داده
-موقعیت دفتر مرکزی: تهران، منطقه عباس آباد
+Company Name: TechVision Solutions
+Founded: 2015
+Headquarters: Tehran, Iran (Abbasabad District)
+Industry: Enterprise Software, Artificial Intelligence, Data Analytics
+Employees: 80+
 
-تاریخچه کوتاه:
-شرکت راهکارپردازان مروو در سال 1394 با تمرکز بر توسعه نرم افزارهای سازمانی بومی تاسیس شد.
-هسته اولیه شرکت توسط چهار نفر از فارغ التحصیلان مهندسی کامپیوتر دانشگاه های تهران و صنعتی شریف شکل گرفت.
-در سال های ابتدایی، فعالیت اصلی شرکت روی پیاده سازی سامانه های اتوماسیون اداری برای شرکت های متوسط بود.
-از سال 1398، مروو با راه اندازی واحد هوش مصنوعی، توسعه محصولات مبتنی بر پردازش زبان طبیعی فارسی را آغاز کرد.
-در سال 1401، اولین نسخه پلتفرم گفتگومحور سازمانی مروو برای پاسخگویی به سوالات داخلی سازمان ها عرضه شد.
-در سال 1403، شرکت به بیش از 120 مشتری سازمانی فعال در صنایع فناوری، بازرگانی، مالی و سلامت رسید.
-امروز مروو با تیمی چندتخصصی، بر ارائه راهکارهای قابل استقرار در زیرساخت داخلی سازمان ها تمرکز دارد.
+Brief History:
+TechVision Solutions was founded in 2015 with a focus on developing enterprise software solutions.
+The founding team consisted of four computer engineering graduates from top Iranian universities.
+Initially, the company focused on office automation systems for mid-sized businesses.
+In 2019, TechVision launched its AI division and began developing NLP-based products.
+By 2023, the company had grown to serve over 120 active enterprise clients across technology, commerce, finance, and healthcare sectors.
+Today, TechVision focuses on delivering AI-powered, on-premise knowledge management solutions.
 
-ماموریت شرکت:
-ماموریت مروو، ساده سازی دسترسی کارکنان سازمان ها به دانش داخلی از طریق ابزارهای هوشمند، امن و فارسی محور است.
-ما تلاش می کنیم زمان جستجوی اطلاعات را کاهش داده و تصمیم گیری عملیاتی را سریع تر و دقیق تر کنیم.
-تمرکز اصلی ما بر ارائه محصولاتی است که بدون نیاز به وابستگی خارجی و به صورت کاملا محلی قابل استفاده باشند.
+Mission:
+Our mission is to simplify employee access to internal organizational knowledge through intelligent, secure, and local-first tools.
 
-چشم انداز شرکت:
-چشم انداز مروو تبدیل شدن به یکی از سه برند برتر راهکارهای دانش سازمانی مبتنی بر هوش مصنوعی در ایران تا سال 1410 است.
-هدف ما ایجاد استاندارد جدیدی برای چت بات های سازمانی فارسی است که دقت، امنیت و تجربه کاربری مناسب را همزمان فراهم کند.
-ما توسعه محصولات مقیاس پذیر برای سازمان های بزرگ و چند شعبه ای را جزو اولویت های راهبردی خود می دانیم.
+Vision:
+To become one of the top three AI-powered knowledge management brands in the region by 2030.
 
-ارزش های محوری:
-1) مشتری محوری واقعی:
-   ما نیازهای عملیاتی مشتری را قبل از هر تصمیم فنی در نظر می گیریم.
-2) شفافیت در تعامل:
-   گزارش دهی، مستندسازی و ارائه وضعیت پروژه ها به صورت شفاف انجام می شود.
-3) امنیت و محرمانگی داده:
-   داده های مشتری دارایی اصلی سازمان است و حفظ محرمانگی آن تعهد غیرقابل مذاکره ماست.
-4) یادگیری مستمر:
-   تیم های فنی و کسب و کار به طور منظم دوره های به روزرسانی مهارت را طی می کنند.
-5) کیفیت قابل اتکا:
-   هر قابلیت قبل از تحویل از مسیر کنترل کیفیت و آزمون های عملکردی عبور می کند.
-6) مسئولیت پذیری:
-   در قبال نتایج، زمان بندی و تعهدات قراردادی پاسخگو هستیم.
+Core Values:
+1) True Customer Focus
+2) Transparency in Communication
+3) Data Security & Confidentiality
+4) Continuous Learning
+5) Reliable Quality
+6) Accountability
 
-شعار سازمانی:
-"دانش سازمانی، همیشه در دسترس"
+Motto:
+"Organizational Knowledge, Always Accessible"
 
 ========================================
-بخش 2: خدمات و محصولات
+SECTION 2: Services & Products
 ========================================
 
-خدمت/محصول 1: مروو بات سازمانی (Morov Org Chat)
-شرح خدمت:
-مروو بات سازمانی یک دستیار گفتگومحور فارسی است که به اسناد داخلی سازمان متصل می شود.
-این محصول برای پاسخگویی سریع به سوالات کارکنان در حوزه منابع انسانی، فرآیندها، آیین نامه ها و دانش فنی طراحی شده است.
-سامانه قابلیت استقرار کامل در شبکه داخلی سازمان را دارد و بدون ارسال داده به سرویس های خارجی کار می کند.
-پشتیبانی از RAG، سطح بندی دسترسی و ثبت لاگ پرسش و پاسخ از ویژگی های اصلی این خدمت است.
-مخاطبان هدف:
-سازمان های متوسط و بزرگ، شرکت های نرم افزاری، هلدینگ ها، و واحدهای عملیات داخلی.
-مدل قیمت گذاری:
-پلن پایه: ماهانه 28,000,000 ریال (تا 50 کاربر)
-پلن حرفه ای: ماهانه 65,000,000 ریال (تا 200 کاربر + داشبورد تحلیلی)
-پلن سازمانی: قیمت توافقی (کاربران نامحدود + سفارشی سازی کامل)
-سطح پشتیبانی:
-پایه: تیکت در ساعات اداری
-حرفه ای: تیکت + تلفن + جلسه آنلاین ماهانه
-سازمانی: مدیر حساب اختصاصی + SLA سفارشی
+Product 1: TechVision Org Chat
+Description:
+An AI-powered conversational assistant that connects to internal company documents.
+Designed for fast Q&A on HR policies, procedures, regulations, and technical knowledge.
+Fully deployable on internal networks with no external data transmission.
+Key features: RAG support, access level control, and Q&A logging.
+Target Audience: Mid-to-large enterprises, software companies, holdings, internal operations units.
+Pricing:
+- Basic Plan: $560/month (up to 50 users)
+- Professional Plan: $1,300/month (up to 200 users + analytics dashboard)
+- Enterprise Plan: Custom pricing (unlimited users + full customization)
 
-خدمت/محصول 2: پلتفرم مدیریت دانش مروو (Morov Knowledge Hub)
-شرح خدمت:
-این پلتفرم برای یکپارچه سازی اسناد، دستورالعمل ها، رویه ها و درس آموخته های سازمانی طراحی شده است.
-قابلیت جستجوی پیشرفته فارسی، برچسب گذاری هوشمند، نسخه بندی محتوا و جریان تایید اسناد در آن ارائه می شود.
-اتصال به فایل سرور داخلی و سیستم های آرشیو سازمانی نیز پشتیبانی می شود.
-مخاطبان هدف:
-واحدهای تضمین کیفیت، مدیریت دانش، منابع انسانی، آموزش و عملیات.
-مدل قیمت گذاری:
-راه اندازی اولیه: از 180,000,000 ریال
-اشتراک نگهداری سالانه: 20 درصد مبلغ قرارداد
-خدمات توسعه سفارشی: ساعتی 4,800,000 ریال
-سطح پشتیبانی:
-پشتیبانی استاندارد: 5 روز کاری هفته
-پشتیبانی ویژه: 6 روز کاری هفته + زمان پاسخ کوتاه تر
+Product 2: TechVision Knowledge Hub
+Description:
+A platform for unifying documents, guidelines, procedures, and lessons learned.
+Features: Advanced search, smart tagging, content versioning, and document approval workflows.
+Supports integration with internal file servers and archival systems.
+Target Audience: Quality assurance, knowledge management, HR, training, and operations teams.
+Pricing:
+- Initial Setup: Starting from $3,600
+- Annual Maintenance: 20% of contract value
+- Custom Development: $96/hour
 
-خدمت/محصول 3: داشبورد تحلیل گفتگو و بینش عملیاتی
-شرح خدمت:
-این محصول گزارش های مدیریتی از گفتگوهای کاربران با دستیار سازمانی تولید می کند.
-شاخص هایی مانند موضوعات پرتکرار، نرخ پاسخ موفق، سوالات بدون پاسخ، و زمان پاسخگویی نمایش داده می شود.
-مدیران می توانند بر اساس این داده ها، اسناد ناقص را شناسایی کرده و کیفیت پایگاه دانش را بهبود دهند.
-مخاطبان هدف:
-مدیران منابع انسانی، مدیران فناوری اطلاعات، مدیران عملیات، تیم مدیریت دانش.
-مدل قیمت گذاری:
-افزونه پایه داشبورد: ماهانه 12,000,000 ریال
-افزونه تحلیلی پیشرفته: ماهانه 24,000,000 ریال
-سطح پشتیبانی:
-نسخه پایه: گزارش های پیش فرض
-نسخه پیشرفته: گزارش سفارشی و خروجی اکسل/CSV
+Product 3: Conversation Analytics Dashboard
+Description:
+Generates management reports from user interactions with the organizational assistant.
+Tracks metrics such as frequent topics, successful response rate, unanswered questions, and response time.
+Helps managers identify gaps in documentation and improve knowledge base quality.
+Target Audience: HR managers, IT managers, operations managers, knowledge management teams.
+Pricing:
+- Basic Dashboard: $240/month
+- Advanced Analytics: $480/month
 
-خدمت/محصول 4: خدمات استقرار، آموزش و بهینه سازی مدل
-شرح خدمت:
-مروو خدمات کامل استقرار راهکارها روی سرور داخلی مشتری را ارائه می دهد.
-این خدمت شامل نصب اولیه، تنظیم امنیتی، انتقال دانش، آموزش کاربران نهایی و آموزش مدیر سامانه است.
-همچنین برای سازمان هایی که نیاز به دقت بالاتر دارند، خدمات بهینه سازی داده و بهبود پرامپت ارائه می شود.
-مخاطبان هدف:
-سازمان هایی که تیم فنی داخلی محدود دارند یا به اجرای سریع پروژه نیاز دارند.
-مدل قیمت گذاری:
-بسته استقرار سریع: 95,000,000 ریال
-بسته استقرار کامل + آموزش: 160,000,000 ریال
-بسته بهینه سازی سه ماهه: 210,000,000 ریال
-سطح پشتیبانی:
-پروژه ای: براساس دامنه قرارداد
-تمدیدی: قرارداد پشتیبانی دوره ای سه یا شش ماهه
+Product 4: Deployment, Training & Model Optimization Services
+Description:
+Full on-premise deployment services including installation, security configuration, knowledge transfer, and end-user training.
+Also offers data optimization and prompt improvement services for higher accuracy.
+Target Audience: Organizations with limited in-house technical teams or those requiring rapid project execution.
+Pricing:
+- Quick Deployment Package: $1,900
+- Full Deployment + Training: $3,200
+- 3-Month Optimization Package: $4,200
 
 ========================================
-بخش 3: ساختار سازمانی
+SECTION 3: Organizational Structure
 ========================================
 
-واحد مدیریت عامل:
-مسئول تدوین راهبرد کلان، توسعه بازارهای هدف و نظارت بر عملکرد بین واحدی است.
-تصمیم گیری نهایی درباره اولویت بندی پروژه های کلیدی در این واحد انجام می شود.
-
-واحد فنی و توسعه محصول:
-مسئول طراحی معماری سامانه ها، توسعه بک اند و فرانت اند، و نگهداری زیرساخت نرم افزاری است.
-تیم های این واحد شامل مهندسی بک اند، مهندسی فرانت اند، هوش مصنوعی و DevOps هستند.
-کنترل نسخه، انتشار نسخه های جدید و رفع اشکالات فنی توسط این واحد مدیریت می شود.
-
-واحد هوش مصنوعی و داده:
-مسئول طراحی، ارزیابی و بهینه سازی مدل های زبانی و موتورهای جستجو است.
-پاکسازی داده، ساخت پایگاه دانش، تنظیم پارامترهای بازیابی و ارزیابی کیفیت پاسخ ها در این واحد انجام می شود.
-این واحد با تیم محصول برای بهبود دقت پاسخ و کاهش خطای اطلاعاتی همکاری نزدیک دارد.
-
-واحد فروش و توسعه کسب و کار:
-مسئول جذب مشتریان جدید، ارائه دمو، مذاکره قرارداد و پیگیری تمدید همکاری ها است.
-تقسیم بندی مشتریان، تحلیل فرصت بازار و طراحی پیشنهاد ارزش هر صنعت توسط این واحد انجام می شود.
-
-واحد پشتیبانی مشتریان:
-مسئول دریافت درخواست های مشتری، ثبت تیکت، پیگیری اشکالات و پاسخگویی عملیاتی روزانه است.
-این واحد سطح بندی فوریت تیکت ها را انجام داده و موارد بحرانی را به واحد فنی ارجاع می دهد.
-
-واحد موفقیت مشتری (Customer Success):
-مسئول پایش رضایت مشتری، ارائه پیشنهاد بهبود استفاده، و برنامه ریزی جلسات بازبینی دوره ای است.
-این واحد تلاش می کند ارزش استفاده از محصول در فرآیندهای واقعی مشتری حفظ و تقویت شود.
-
-واحد منابع انسانی:
-مسئول جذب نیرو، برنامه آموزش، ارزیابی عملکرد، توسعه مسیر شغلی و نگهداشت کارکنان است.
-رسیدگی به امور اداری، قراردادها و رفاه کارکنان نیز در این واحد انجام می شود.
-
-واحد مالی و اداری:
-مسئول مدیریت جریان نقدی، صدور صورت حساب، مدیریت هزینه ها و تهیه گزارش های مالی است.
-هماهنگی قراردادهای تامین کنندگان و امور اداری دفتر نیز در این واحد پیگیری می شود.
+- Executive Office: Strategic planning, market development, cross-unit performance oversight.
+- Engineering & Product Development: Architecture design, backend/frontend development, DevOps, and release management.
+- AI & Data Unit: Language model design, evaluation, optimization, data cleaning, and knowledge base construction.
+- Sales & Business Development: Client acquisition, demos, contract negotiation, and renewals.
+- Customer Support: Ticket handling, issue tracking, daily operational response.
+- Customer Success: Satisfaction monitoring, usage improvement recommendations, periodic review meetings.
+- Human Resources: Recruitment, training, performance evaluation, career development.
+- Finance & Administration: Cash flow management, invoicing, cost management, financial reporting.
 
 ========================================
-بخش 4: اطلاعات تماس و موقعیت
+SECTION 4: Contact & Location
 ========================================
 
-دفتر مرکزی تهران:
-استان تهران، تهران، خیابان مطهری، خیابان میرعماد، پلاک 118، طبقه 6، واحد 12
-کد پستی: 1587843311
-تلفن ثابت: 021-88765432
-تلفن ثابت پشتیبان: 021-88765433
-فکس: 021-88765439
-ایمیل عمومی: info@morov.ir
-ایمیل فروش: sales@morov.ir
-ایمیل پشتیبانی: support@morov.ir
+Head Office (Tehran):
+Address: Unit 12, Floor 6, No. 118, Mir Emad St., Motahari Ave., Tehran, Iran
+Postal Code: 1587843311
+Phone: +98-21-88765432
+Support Phone: +98-21-88765433
+Fax: +98-21-88765439
+General Email: info@techvision-solutions.com
+Sales Email: sales@techvision-solutions.com
+Support Email: support@techvision-solutions.com
 
-دفتر عملیات اصفهان:
-استان اصفهان، اصفهان، خیابان چهارباغ بالا، مجتمع فناوری سپهر، طبقه 3
-کد پستی: 8174932210
-تلفن دفتر اصفهان: 031-36221145
-ایمیل عملیات: ops-esf@morov.ir
+Isfahan Operations Office:
+Address: Floor 3, Sepehr Technology Complex, Chahar Bagh Bala St., Isfahan, Iran
+Phone: +98-31-36221145
 
-ساعات کاری رسمی:
-شنبه تا چهارشنبه: 08:30 تا 17:30
-پنجشنبه: 09:00 تا 13:00
-جمعه و تعطیلات رسمی: تعطیل
+Official Working Hours:
+Saturday to Wednesday: 08:30 – 17:30
+Thursday: 09:00 – 13:00
+Friday & Public Holidays: Closed
 
-ساعات پاسخگویی پشتیبانی:
-پشتیبانی سطح 1: شنبه تا پنجشنبه 08:00 تا 20:00
-پشتیبانی سطح 2 (مشتریان حرفه ای و سازمانی): همه روزه 08:00 تا 23:00
-شماره تماس پشتیبانی: 021-91304567
-زمان پاسخ اولیه تیکت:
-اولویت بحرانی: حداکثر 30 دقیقه
-اولویت بالا: حداکثر 2 ساعت کاری
-اولویت متوسط: حداکثر 6 ساعت کاری
-اولویت پایین: حداکثر 1 روز کاری
+Support Response Hours:
+Level 1 Support: Saturday to Thursday, 08:00 – 20:00
+Level 2 Support (Professional & Enterprise clients): Daily, 08:00 – 23:00
+Initial Ticket Response Times:
+- Critical: Within 30 minutes
+- High: Within 2 business hours
+- Medium: Within 6 business hours
+- Low: Within 1 business day
 
-شبکه های رسمی سازمانی:
-وب سایت: www.morov.ir
-لینکدین: linkedin.com/company/morov-ir
-آپارات: aparat.com/morov
+Official Channels:
+Website: www.techvision-solutions.com
+LinkedIn: linkedin.com/company/techvision-solutions
 
 ========================================
-بخش 5: سیاست ها و قوانین
+SECTION 5: Policies & Guidelines
 ========================================
 
-سیاست بازگشت وجه:
-دوره آزمایشی 7 روزه برای برخی پلن های اشتراکی فعال است.
-در صورت ثبت درخواست کتبی طی 7 روز اول و نبود استفاده عملیاتی گسترده، امکان بازگشت وجه وجود دارد.
-هزینه های مربوط به استقرار، سفارشی سازی و آموزش حضوری غیرقابل استرداد است.
-در قراردادهای سازمانی، شرایط بازگشت وجه مطابق مفاد قرارداد اختصاصی تعیین می شود.
+Refund Policy:
+A 7-day trial period is available for select subscription plans.
+Written refund requests submitted within the first 7 days, without extensive operational usage, may be eligible.
+Deployment, customization, and on-site training fees are non-refundable.
+For enterprise contracts, refund terms follow the specific agreement.
 
-سیاست حفظ حریم خصوصی و داده:
-تمام داده های مشتری متعلق به همان مشتری است و مروو ادعای مالکیت روی محتوا ندارد.
-داده های سازمانی بدون مجوز کتبی مشتری در اختیار شخص ثالث قرار نمی گیرد.
-در حالت استقرار داخلی، داده ها صرفا در زیرساخت مشتری پردازش و ذخیره می شوند.
-در صورت استفاده از خدمات ابری داخلی، دسترسی ها با اصل حداقل سطح دسترسی کنترل می شود.
-گزارش رخدادهای امنیتی در کوتاه ترین زمان ممکن به نماینده معرفی شده مشتری اطلاع داده می شود.
+Data Privacy:
+All client data belongs to the client. TechVision claims no ownership over content.
+Organizational data is never shared with third parties without written client consent.
+In on-premise deployments, data is processed and stored exclusively on client infrastructure.
+Security incidents are reported to the designated client representative as soon as possible.
 
-سیاست نگهداری داده:
-لاگ های سیستمی به طور پیش فرض 90 روز نگهداری می شوند.
-درخواست افزایش یا کاهش دوره نگهداری با تایید کتبی مشتری قابل اعمال است.
-پس از پایان قرارداد، داده ها مطابق فرآیند مصوب حذف یا به مشتری تحویل می شوند.
+Data Retention:
+System logs are retained for 90 days by default.
+Retention periods can be adjusted with written client approval.
+Upon contract termination, data is securely deleted or returned per agreed procedures.
 
-توافق سطح خدمات (SLA):
-دسترس پذیری ماهانه سرویس:
-پلن پایه: 98.5 درصد
-پلن حرفه ای: 99.2 درصد
-پلن سازمانی: 99.5 درصد
-روش محاسبه دسترس پذیری بر مبنای زمان سرویس فعال در طول ماه تقویمی انجام می شود.
-زمان های نگهداری برنامه ریزی شده که از قبل اطلاع رسانی می شوند، از محاسبه SLA خارج هستند.
-
-تعهدات پاسخگویی پشتیبانی:
-اولویت بحرانی: شروع رسیدگی زیر 30 دقیقه
-اولویت بالا: شروع رسیدگی زیر 2 ساعت
-اولویت متوسط: شروع رسیدگی زیر 6 ساعت
-اولویت پایین: شروع رسیدگی زیر 1 روز کاری
-
-تعریف اولویت بحرانی:
-اختلال کامل سرویس در محیط عملیاتی مشتری
-عدم دسترسی به داده های اصلی سازمان
-اشکال امنیتی با ریسک بالا
+Service Level Agreement (SLA):
+Monthly Service Availability:
+- Basic Plan: 98.5%
+- Professional Plan: 99.2%
+- Enterprise Plan: 99.5%
+Scheduled maintenance with prior notice is excluded from SLA calculations.
 
 ========================================
-بخش 6: سوالات متداول (FAQ)
+SECTION 6: Frequently Asked Questions (FAQ)
 ========================================
 
-سوال 1: آیا مروو بات بدون اینترنت هم کار می کند؟
-پاسخ: بله. در حالت استقرار داخلی، سامانه می تواند در شبکه داخلی سازمان و بدون وابستگی به اینترنت عمومی اجرا شود.
+Q1: Does the Org Chat work without internet?
+A: Yes. In on-premise deployment, the system operates fully within the internal network.
 
-سوال 2: چه نوع فایل هایی برای پایگاه دانش پشتیبانی می شود؟
-پاسخ: فایل های متنی، PDF، DOCX، صفحات HTML داخلی و خروجی های ساختاریافته مانند CSV با تنظیمات مناسب پشتیبانی می شوند.
+Q2: What file types are supported for the knowledge base?
+A: Text files, PDF, DOCX, internal HTML pages, and structured outputs like CSV are supported.
 
-سوال 3: آیا پاسخ های چت بات قابل ردیابی به منبع هستند؟
-پاسخ: بله. در نسخه های حرفه ای و سازمانی، قابلیت نمایش بخش های منبع برای هر پاسخ فعال است.
+Q3: Are chatbot answers traceable to their source?
+A: Yes. Source sections can be displayed for each answer in Professional and Enterprise plans.
 
-سوال 4: حداقل زمان راه اندازی پروژه چقدر است؟
-پاسخ: برای نسخه پایه، بین 5 تا 10 روز کاری. برای نسخه سازمانی بسته به حجم داده و یکپارچه سازی، زمان بیشتر خواهد بود.
+Q4: What is the minimum project setup time?
+A: 5 to 10 business days for the Basic plan. Enterprise timelines vary based on data volume and integrations.
 
-سوال 5: آیا امکان تعیین سطح دسترسی کاربران وجود دارد؟
-پاسخ: بله. مدیر سامانه می تواند سطح دسترسی را بر اساس واحد سازمانی، نقش شغلی یا گروه کاربری تعریف کند.
+Q5: Can user access levels be defined?
+A: Yes. Access can be set by organizational unit, job role, or user group.
 
-سوال 6: در صورت اشتباه بودن پاسخ ها چه باید کرد؟
-پاسخ: پیشنهاد می شود ابتدا کیفیت و ساختار اسناد منبع بررسی شود. تیم مروو همچنین خدمات بهینه سازی داده و تنظیم بازیابی را ارائه می دهد.
+Q6: What should I do if answers are incorrect?
+A: Review the quality and structure of source documents first. TechVision also offers data optimization and retrieval tuning services.
 
-سوال 7: آیا امکان اتصال به Active Directory وجود دارد؟
-پاسخ: بله. برای مشتریان سازمانی، یکپارچه سازی احراز هویت با AD یا LDAP در دامنه پروژه قابل انجام است.
+Q7: Is Active Directory integration possible?
+A: Yes. For enterprise clients, AD/LDAP authentication integration is available.
 
-سوال 8: نسخه پشتیبان چگونه تهیه می شود؟
-پاسخ: سیاست بکاپ براساس زیرساخت مشتری تنظیم می شود. به طور معمول، بکاپ روزانه از پایگاه داده و تنظیمات سامانه پیشنهاد می شود.
+Q8: How are backups handled?
+A: Backup policy is configured per client infrastructure. Daily backups of the database and system settings are typically recommended.
 
-سوال 9: آیا آموزش کاربران نهایی ارائه می شود؟
-پاسخ: بله. بسته های آموزشی شامل جلسه آشنایی اولیه، راهنمای استفاده و کارگاه کوتاه برای مدیران داخلی است.
+Q9: Is end-user training provided?
+A: Yes. Training packages include an introductory session, user guide, and short workshop for internal administrators.
 
-سوال 10: اگر نیاز به قابلیت سفارشی داشته باشیم چه روندی دارد؟
-پاسخ: پس از ثبت درخواست، تحلیل نیاز انجام می شود و برآورد زمان و هزینه به صورت رسمی ارائه می گردد. سپس توسعه در قالب قرارداد الحاقی انجام می شود.
+Q10: What is the process for requesting custom features?
+A: Submit a request, receive a needs analysis, and get a formal time and cost estimate. Development proceeds under a supplementary contract.
 
-سوال 11: آیا اطلاعات مشتری برای آموزش عمومی مدل استفاده می شود؟
-پاسخ: خیر. اطلاعات مشتری بدون رضایت کتبی برای اهداف آموزشی عمومی یا اشتراک گذاری خارج از قرارداد استفاده نمی شود.
+Q11: Is client data used to train public models?
+A: No. Client data is never used for public model training or external sharing without written consent.
 
-سوال 12: آیا امکان چندزبانه شدن سیستم وجود دارد؟
-پاسخ: بله. هسته سامانه قابلیت پشتیبانی از چند زبان را دارد، اما تمرکز اصلی محصول بر کیفیت پاسخ فارسی است.
+Q12: Can the system support multiple languages?
+A: Yes. The core system supports multiple languages, though the primary focus remains on high-quality English responses.
 
 ========================================
-یادداشت نهایی
+END OF DOCUMENT
 ========================================
 
-این سند به عنوان مرجع رسمی اطلاعات شرکت راهکارپردازان مروو در سامانه های پاسخگویی داخلی استفاده می شود.
-هرگونه تغییر در اطلاعات تماس، قیمت گذاری یا سیاست ها باید ابتدا در این سند اعمال و سپس در سامانه منتشر شود.
-مسئول نگهداری سند: واحد مدیریت دانش با همکاری واحد فروش و پشتیبانی.
+This document serves as the official reference for TechVision Solutions information in internal Q&A systems.
+Any changes to contact info, pricing, or policies must be applied here first before system-wide publication.
+Document Maintainer: Knowledge Management Unit, in coordination with Sales and Support.
